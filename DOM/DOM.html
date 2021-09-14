@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .amarillo{
+            color:goldenrod;
+        }
+
+        .blanco{
+            color: white;
+        }
+    </style>
+</head>
+<body><!--onload="entrar()"  este va dentro del body -->
+   <!--  <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">Manejo de Eventos con el api DOM</h1>    
+    <div id="mostrar"></div>
+
+    <h2 id="titulo" onmouseover="amarillo(this)" onmouseout="verde(this)">Etiqueta H2 metodo onmouseover y onmouseout</h2>
+    <h2 id="titulo" onmousedown="naranja(this)" onmouseup="morado(this)">Etiqueta H2 metodo onmousedown y onmouseup</h2>
+
+    <label>Nombre:</label><input type="text" id="nombre" onchange="convertir(this)"/>
+   
+    <h1 class="amarillo" id="cabecero">DOM</h1> 
+    <p class="amarillo" id="parrafo">Parrafo 1</p>
+    <p class="amarillo" id="parrafo2">Parrafo 2</p>
+
+    <form id="formulario">
+        <label>Nombre: </label><input type="text" name="nombre" value="Fercho"/>
+         <br><br>
+         <label>Apellido: </label><input type="text" name="apellido" value="Coronel"/> 
+     </form><br><br>
+     <button onclick="mostrarValores()">Mostrar</button><br><br>
+ <div id="valores"></div>
+
+    <button onclick="mostrar()">Cambiar Imagen</button><br><br>
+
+    <button onclick="mostrar1()">Cambiar color encabezado</button><br><br>
+   
+    <img id="imagen" src="https://images.unsplash.com/photo-1574063413132-354db9f190fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" alt="gatito1" height="250px" width="250px" /><br><br> -->
+    
+    <h1>Evento onfocus y onblur</h1>
+    <label>Nombre: </label><input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/><br><br>
+    <label>Apellido: </label><input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+   
+   <h1>Evento addEventListener</h1>
+   <label>Nombre: </label><input type="text" id="nombre1"/><br><br>
+   <label>Apellido: </label><input type="text" id="apellido1"/>
+
+     <h1>Delegacion de Eventos</h1>
+     <form id="forma">
+         <label>Nombre: </label><input type="text" id="nombre2"/><br><br>
+         <label>Apellido: </label><input type="text" id="apellido2"/>
+     </form>
+
+   
+    <script src="./DOM.js"></script> 
+    
+    
+</body>
+</html>
